@@ -5,12 +5,12 @@
   tasks:
   - name: PLAY1 and TASK1
     ansible.builtin.debug:
-      msg : "hello from PLAY1 AND TASK1"
+      msg: "hello from PLAY1 AND TASK1"
 
 - name: PLAY2
-  host: local
+  hosts: local
   connection: local
-  type:
+  tasks:
   - name: PLAY2 and TASK2
     ansible.builtin.package:
-       msg: "hello from PLAY2 and TASK2"    
+      msg: "hello from PLAY2 and TASK2"    
