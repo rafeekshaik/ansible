@@ -7,7 +7,7 @@
     TRAINER: sivakumar
   tasks:
   - name: printing the variables
-    var: #task leve; variables
+    vars: #task leve; variables
      COURSE: ansiblr
 
     ansible.builtin.debug:
