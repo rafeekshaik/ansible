@@ -6,4 +6,3 @@
   - name: printing the variables  
     ansible.builtin.debug:
       msg: "course is {{ COURSE }}, duration {{ DURATION }}  trainer is {{ TRAINER }}"
-
