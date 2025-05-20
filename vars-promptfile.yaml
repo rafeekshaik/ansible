@@ -12,4 +12,4 @@
   tasks:
   - name: variable names took from the prompts
     ansible.builtin.debug:
-     msg: course is {{ DEVOPS }}, duration is {{ DURATION }}, faculty is {{ FACULTY }}
+     msg: course is {{ COURSE }}, duration is {{ DURATION }}, faculty is {{ FACULTY }}
