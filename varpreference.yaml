@@ -12,7 +12,7 @@
     private: false
    
   tasks:
-  - name: variable
+  - name: print the variables
     vars:
     GREET: "TASK"
     ansible.builtin.debug:
