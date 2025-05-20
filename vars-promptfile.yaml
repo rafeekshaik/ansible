@@ -1,7 +1,6 @@
 - name: taking variables from the prompt
   hosts: local  
   connection: local
- 
 
   tasks:
   - name: variable names took from the prompts
