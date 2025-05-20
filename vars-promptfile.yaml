@@ -1,16 +1,7 @@
 - name: taking variables from the prompt
   hosts: local  
   connection: local
-  vars_prompt:
-  - name: COURSE  
-    prompt: please enter the course name  
-    private: false
-  - name: DURATION
-    prompt: please enter the duration
-    private: false
-  - name: FACULTY 
-    prompt: please enter the facukty name
-    private: false
+ 
 
   tasks:
   - name: variable names took from the prompts
