@@ -12,7 +12,7 @@
     private: false
    
   tasks:
-  - name: variable preference
+  - name: variable
     vars:
     GREET: "TASK"
     ansible.builtin.debug:
