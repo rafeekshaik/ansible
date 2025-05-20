@@ -11,12 +11,12 @@
    - git
    live: true
    tools:
-     ci:
-     cloud:
+     ci: jenkins
+     cloud: aws
      containerization: docker
 
   tasks:
   - name: print the course infor mation
     ansible.builtin.debug:
-     msg: "heelo iam learning {{ course_name }} duration {{ duration }}  topics are ::{{ topics }} calss are live :: {{ live }}  tools covered are {{tools}}"    
+     msg: "heelo iam learning {{ course_name }} ,duration {{ duration }},  topics are ::{{ topics }}, calss are live :: {{ live }}, tools covered are {{tools}}"    
   
