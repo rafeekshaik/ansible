@@ -1,0 +1,19 @@
+
+- name: variable prefernce
+  hosts: local  
+  connection: local
+  vars:
+   GREET: "PLAY"
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: GREET
+    prompt: please enter the value
+    private: false
+   
+  tasks:
+  - name: variable preference
+    GREET: "TASK"
+    ansible.builtin.debug:
+      msg: "hello from {{ GREET }}"
+ 
