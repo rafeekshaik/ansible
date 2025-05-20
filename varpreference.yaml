@@ -4,8 +4,8 @@
   connection: local
   vars:
    GREET: "PLAY"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: GREET
     prompt: please enter the value
