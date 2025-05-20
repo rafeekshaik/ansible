@@ -1,0 +1,9 @@
+- name: varailblr from file
+  hosts: local  
+  connection: local
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: print the course information
+    ansible.builtin.debug:
+      msg: "couse is {{ COURSE }},duration is {{ DURATION }}, faculty is {{ FACULTY }}"
