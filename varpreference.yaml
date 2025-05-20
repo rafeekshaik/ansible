@@ -13,6 +13,7 @@
    
   tasks:
   - name: variable preference
+    vars:
     GREET: "TASK"
     ansible.builtin.debug:
       msg: "hello from {{ GREET }}"
