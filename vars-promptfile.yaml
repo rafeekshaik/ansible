@@ -1,7 +1,5 @@
 - name: taking variables from the prompt
-  hosts: local  
-  connection: local
-
+  hosts: web
   tasks:
   - name: variable names took from the prompts
     ansible.builtin.debug:
