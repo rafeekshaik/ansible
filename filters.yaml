@@ -23,9 +23,9 @@
   
       msg: "course info: {{ course | dict2items }}"
 
-  - name: convert maps into list
-    vars: 
-     course:
-     - { 'key': 'name', 'value': 'ansible'}
-    ansible.builtin.debug:
-      msg: "course info : {{ course | items2dict}}
+  - name: convert lower to upper
+    vars:
+     name: "sivakumar reddy"
+     ansible.builtin.debug:
+      msg: "hello {{ name | upper }}"
+     
