@@ -1,7 +1,7 @@
 - name: install nginix
   hosts: web
   become: yes
-  tasks:
+  tasks:  
   - name: installing nginix if rhel
     ansible.builtin.dnf:
        name: nginix 
