@@ -3,9 +3,9 @@
   connection: local 
   tasks:
   - name: print names
-  ansible.builtin.debug:
-    msg: "hello {{ item }}"
-  loop:
-  - Ramesh
-  - suresh
-  - hareesh
+    ansible.builtin.debug:
+      msg: "hello {{ item }}"
+    loop:
+    - Ramesh
+    - suresh
+    - hareesh
