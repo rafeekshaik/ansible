@@ -1,0 +1,16 @@
+
+- name: check the value is greater then 10 or not
+  hosts: local
+  connection: local 
+  vars:
+   my_number: 15
+  type:
+  - name: print if number is greater then 10  
+    ansible.builtun.debug:
+     msg: "given number {{ my_number }} is greater than 10"
+    when: my_number > 10
+
+  - name: print uf number is lessthen or equl to 10
+    ansible.builtin.debug:
+     msg: "given number {{ my_number }} is less than or equal to 10"  
+    when: my_number <= 10
