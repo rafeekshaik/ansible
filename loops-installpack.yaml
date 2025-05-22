@@ -2,12 +2,12 @@
   hosts: web  
   become: yes
   tasks:
-   - name: install packages 
-     ansible.builtin.packages:
-       name: "{{ item }}" 
-       state: installed
-     loop:
-     - gcc
-     - mysql
-     - git
-     - zip
+  - name: install packages 
+    ansible.builtin.packages:
+      name: "{{ item }}" 
+      state: installed
+    loop:
+    - gcc
+    - mysql
+    - git
+    - zip
