@@ -1,5 +1,6 @@
 - name: install nginix
-  hosts: web  
+  hosts: web
+  become: yes
   tasks:
   - name: installing nginix if rhel
  
