@@ -38,7 +38,7 @@
 
   - name: check ip address is vali or not
     vars:
-      ip: "2468.255.246.245"
+      ip: "246.255.246.245"
 
     ansible.builtin.debug:
       msg: "{{ ip | ansible.utils.ipaddr }}"
