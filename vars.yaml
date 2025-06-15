@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-  COURSE: devops with aws
+  COURSE: "devops with aws"
   DURATION: 120hrs
   TRAINER: sivakumar
   tasks:
