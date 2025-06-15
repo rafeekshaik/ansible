@@ -18,4 +18,4 @@
   tasks:
   - name: print all variables
     ansible.builtin.debug:
-      msg: "course is {{ course_name }}, duration is {{ duration }}, topics covered are {{ topice }}, is it live?: {{ live }}, tools covered {{ tools }}"
+      msg: "course is {{ course_name }}, duration is {{ duration }}, topics covered are {{ topics }}, is it live?: {{ live }}, tools covered {{ tools }}"
