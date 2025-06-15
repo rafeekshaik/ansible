@@ -11,6 +11,6 @@
 
 
   - name: print the number is less than 10
-    ansible.builtin.dubug:
+    ansible.builtin.debug:
       msg: "the number {{ my_number }} is less than 10"
     when: my_number <= 10
