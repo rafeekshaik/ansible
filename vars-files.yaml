@@ -1,8 +1,15 @@
 - name: variable in files
   hosts: local
   connection: local
-  vars_files:
-  - vars.yaml
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter the text
+  - name: DURATION
+    prompt: please enter the text
+  - name: TRAINER
+    prompt: please enter the text
+
+
   tasks: 
   - name: print the varibles inside the files
     ansible.builtin.debug:
