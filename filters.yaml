@@ -1,7 +1,7 @@
 - name: filters
   hosts: local
   connection: local
-  item:
+  tasks:
   - name: handle undefined variabke
     ansible.builtin.debug:
       msg: " hello {{ person }}"
