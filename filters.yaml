@@ -4,4 +4,4 @@
   item:
   - name: handle undefined variabke
     ansible.builtin.debug:
-      msg: "{{ person }}"
+      msg: " hello {{ person }}"
