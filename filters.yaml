@@ -28,3 +28,11 @@
      - {'key': 'trainer', 'value': 'sivakumar'}
     ansible.builtin.debug:
        msg: "course info :: {{ course | items2dict }}"
+
+
+
+  - name: max and min numbers
+    vars:
+      numbers: [1,30,48,55,87,99,76677]
+      ansible.builtin.debug:
+        msg: "min is: {{ number | min }}  max is {{ number | max }}"
