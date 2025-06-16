@@ -1,4 +1,4 @@
-- name: loops
+- name: hello 
   hosts: web
   tasks:
   - name: loop conditions
