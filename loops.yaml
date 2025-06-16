@@ -1,11 +1,12 @@
-- name: loops
+- name: instlaling servers
   hosts: local
   connection: local
   tasks:
-  - name: loop conditions
-    ansible.builtin.debug:
-      msg: "hello {{ item }}"
-    loop:
-      - ramesh
-      - suresh
-      - venky
+   - name: installing servers
+     ansible.builtin.package:
+        name: "{{ item }}"
+        state: installed
+     loop:
+     - nginx
+     - git
+     - gcc
