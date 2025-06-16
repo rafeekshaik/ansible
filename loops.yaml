@@ -5,7 +5,7 @@
   - name: loop conditions
     ansible.builtin.debug:
       msg: "hello {{ item }}"
-  loop:
-  - ramesh
-  - suresh
-  - venky
+    loop:
+      - ramesh
+      - suresh
+      - venky
