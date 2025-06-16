@@ -8,7 +8,8 @@
        name: "{{ item }}"
        state: installed
     loop:
-    - nginx
-    - mysql
-    - git
-    - zip
+
+    - { name: 'git', state: 'absent'}
+    - { name: 'nginx', state: 'present'}
+    - { name: 'gcc', state: 'present'}
+    - { name: 'zip', state: 'present'}
