@@ -2,11 +2,12 @@
   hosts: local
   connection: local
   tasks:
-   - name: installing servers
-     ansible.builtin.package:
-        name: "{{ item }}"
-        state: installed
-     loop:
-     - nginx
-     - git
-     - gcc
+  - name: installing serveres
+    ansible.builtin.package:
+       name: "{{ item }}"
+       state: installed
+    loop:
+    - nginx
+    - mysql
+    - git
+    - zip
