@@ -1,6 +1,7 @@
 - name: instlaling servers
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: installing serveres
     ansible.builtin.package:
