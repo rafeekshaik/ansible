@@ -5,12 +5,12 @@
   tasks:
   - name: install nginx and git
     ansible.builtin.package:
-      name: "{{ item }}"
-      state: installed
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
 
 
     loop:
-    - { name: 'nginx', state: 'absent'}
+    - { name: 'nginx', state: 'present'}
     - { name: 'git', state: 'absent'}
-
+    - { name: 'gcc', state: 'installed'}
   
