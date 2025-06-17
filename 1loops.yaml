@@ -1,6 +1,7 @@
 - name: install nginx and git
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: install nginx and git
     ansible.builtin.package:
