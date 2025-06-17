@@ -5,3 +5,10 @@
   - name: filters
     ansible.builtin.debug:
       msg: "hello {{ person | default('ramesh') }}"
+
+  - name: convert srings into list
+    vars:
+      fruits: "apple, banana, orange"
+    ansible.builtin.debug:
+
+    msg: " fruits are {{ fruits | split(',') }}"
