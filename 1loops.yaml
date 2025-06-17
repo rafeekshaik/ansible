@@ -10,7 +10,7 @@
 
 
     loop:
-    - nginx
-    - git
+    - { name: 'nginx', state: 'absent'}
+    - { name: 'git', state: 'absent'}
 
   
