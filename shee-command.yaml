@@ -5,4 +5,7 @@
   - name: exectute ls command
     ansible.builtin.shell: ls -ltr > /tmp/output.log
 
+  - name: execute ls command in command module
+    ansible.builtin.command: ls -ltr
+
      
