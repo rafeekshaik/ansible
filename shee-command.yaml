@@ -6,7 +6,7 @@
     ansible.builtin.shell: ls -ltr > /tmp/output.log
 
   - name: execute ls command in command module
-    ansible.builtin.command: ls -ltr
+    ansible.builtin.command: lsss -ltrsss
     register: command_result
 
   - name: print the output
