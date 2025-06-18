@@ -32,5 +32,12 @@
       numbers: [1,22,44,65,78,99,777]
     ansible.builtin.debug:
       msg: "min is :: {{ numbers | min }, max is :: {{ numbers | max }}"
+
+
+  - name: print the ip
+    vars:
+     ipaddress: "2456:255:255:255"
+    ansible.builtin.debug:
+      msg: "{{ ipaddress | ansible.utils.ipaddr }}"
     
     
