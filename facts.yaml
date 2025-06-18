@@ -1,4 +1,4 @@
-- name: facts
+- name: facts are
   hosts: web
   tasks:
   - name: print the facts
