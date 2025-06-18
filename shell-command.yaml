@@ -12,5 +12,7 @@
 
   - name: print the shell module
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
+
+    
       
      
