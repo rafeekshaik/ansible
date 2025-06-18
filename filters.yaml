@@ -1,6 +1,6 @@
 - name: filters
   hosts: local
-  conection: local
+  connection: local
   tasks:
   - name: convering string to list
     vars:
