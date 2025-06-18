@@ -11,6 +11,6 @@
     loop:
     - { name: 'nginx' , state: 'present' }
     - { name: 'git' , state: 'present' }
-    - { name: 'zip' , state: 'obsent' }
-    - { name: 'gcc' , state: 'obsent' }
+    - { name: 'zip' , state: 'absent' }
+    - { name: 'gcc' , state: 'absent' }
     
