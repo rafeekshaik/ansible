@@ -9,3 +9,8 @@
   - name: print the command output
     ansible.builtin.debug:
      msg: "{{ ansible_command }}"
+
+  - name: print the shell module
+    ansible.builtin.shell: ls -ltr > /tmp/output.txt
+      
+     
