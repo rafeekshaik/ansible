@@ -28,8 +28,6 @@
       msg: "course info :: {{ course | items2dict }}"
 
   
-
-
   - name: print the ip
     vars:
      ipaddress: "2456:255:255:255"

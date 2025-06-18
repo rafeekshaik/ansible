@@ -1,0 +1,11 @@
+- name: command module
+  hosts: local
+  connection: local
+  tasks:
+  - name: command module 
+    ansible.builtin.command: ls -l 
+    register: ansible_command
+
+  - name: print the command output
+    ansible.builtin.debug:
+     msg: "{{ ansible_command }}"
