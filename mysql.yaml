@@ -22,6 +22,8 @@
       login_password: ExpenseApp@1
       login_host: mysql.daws17s.online
     register: mysql_info
+    ignore_error: true
+    
   
 
   - name: print the output
