@@ -27,5 +27,10 @@
     ansible.builtin.debug:
       msg: "course info :: {{ course | items2dict }}"
 
-
+  - name: max and min numbers
+    vars:
+      numbers: [1,22,44,65,78,99,777]
+    ansible.builtin.debug:
+      msg: "min number {{ numbers | min }, max number is {{ numbers | max }}"
+    
     
