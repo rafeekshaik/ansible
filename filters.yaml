@@ -1,0 +1,12 @@
+- name: filters
+  hosts: local
+  conection: local
+  tasks:
+  - name: convering string to list
+    vars:
+     fruits: "apple, orange, banana"
+    ansible.builtin.debug:
+      msg: fruits are {{ fruits | split (','') }}
+
+
+    
