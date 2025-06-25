@@ -10,6 +10,7 @@
    - mysql
    - backend
    - frontend
+   zone: daws17s.online
   tasks:
   - name: insatlling python module
     ansible.builtin.pip:
@@ -36,3 +37,17 @@
     ansible.builtin.debug:
       msg: "{{ item.item }}: {{ item.instances[0].private_ip_address }}"
     loop: "{{ ec2_info.results }}"
+  
+
+  - name: create private ip r53 records
+    amazon.aws.route53:
+      state: present
+      zone: "{{ zone }}"
+      record: "{{ item.item }}.{{ zone }}"
+      type: A
+      ttl: 1
+      value: "{{ item.instances[0].private_ip_address }}"
+      wait: true
+      overwrite: yes
+    loop: "{{ ec2_info.results }}"
+    
