@@ -27,7 +27,7 @@
         subnet_id: "{{ subnetid }}"
         instance_type: "{{ instances_type }}"
     loop: "{{ instances }}"
-    Register: ec2_info
+    register: ec2_info
   - name: print the output
     ansible.builtin.debug:
      msg: "{{ ec2_info }}"
