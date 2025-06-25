@@ -34,5 +34,5 @@
 
   - name: print private ip address
     ansible.builtin.debug:
-      msg: "{{ item.item }}: {{ item.instaces[0].private_ip_address }}"
+      msg: "{{ item.item }}: {{ item.instances[0].private_ip_address }}"
     loop: "{{ ec2_info.results }}"
