@@ -19,5 +19,5 @@
        subnet_id: "{{ subnet_id }}" 
        security_group: "{{ sg_id }}"
        image_id: "{{ ami_id }}"
-       instances_type: "{{ instances_type }}"
+       instance_type: "{{ instances_type }}"
     loop: "{{ instances }}"
