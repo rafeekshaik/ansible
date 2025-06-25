@@ -1,5 +1,6 @@
 - name: install nginx
   hosts: web
+  c
   become: yes
   tasks:
   - name: install nginx
