@@ -13,7 +13,7 @@
     
     tasks:
     - name: install python libraries
-      ansible.builtin.package:
+      ansible.builtin.pip:
         name: "{{ item }}"
         executable: pip3.9
       loop:
