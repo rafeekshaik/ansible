@@ -15,7 +15,11 @@
     - name: install python libraries
       ansible.builtin.package:
         name: "{{ item }}"
-        executable: yes
+        executable: pip3.9
+      loop:
+      - boto3
+      - botocore
+
     - name: creting ec2 instances
       amazon.aws.ec2_instance:
          name: "{{ item }}"
