@@ -6,6 +6,7 @@
       subnets: subnet-0e2183fb4245ac220
       ami_id: ami-09c813fb71547fc4f
       instance_type: t3.micro
+      zone: daws17s.online
       instances:
       - mysql
       - backend
@@ -37,5 +38,20 @@
       ansible.builtin.debug:
          msg: "{{ item.instances[0].private_ip_address}}"
       loop: "{{ ec2_info.results }}"
+
+    - name: crate r53 records
+      amazon.aws.route53:
+
+        state: present
+        zone: "{{ zone }}"
+        record: "{{ item.item}}:{{ zone }}"
+        type: A
+        value: "{{ item.instances[0].private_ip_address }}"
+        ttl: 1
+        overwrite: true
+        wait: true
+      loop: "{{ ec2_info.results }}"
+
+
 
 
